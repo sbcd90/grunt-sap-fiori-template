@@ -1,9 +1,9 @@
 {
-    "destinationPath" : "C:/Users/i076326/git/newloc",
+    "destinationPath" : "test/expected/cus.sample.fiori.template",
     "project_groupId" : "com.sap.fiori",
-    "project_artifactId" : "newloc",
+    "project_artifactId" : "cus.sample.fiori.template",
     "project_version" : "1.0.0-SNAPSHOT",
-    "project_description" : "New Location",
+    "project_description" : "Sample SAP Fiori Template",
     "project_parent_groupId" : "com.sap.fiori",
     "project_parent_artifactId" : "fnf-parent-pom",
     "project_parent_version" : "1.4.2"
