@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<templateModel>
+    <containers>
+        <container id="pom" description="" title="POM Section">
+            <customization title="POM Section Customization">
+                <field type="string" id="groupId" description="" title="GroupID">
+                    <value><%= project.groupId %></value>
+                </field>
+                <field type="string" id="artifactId" description="" title="ArtifactID">
+                    <value><%= project.artifactId %></value>
+                </field>
+                <field type="string" id="projName" description="" title="Project Name">
+                    <value><%= project.artifactId %></value>
+                </field>
+                <field type="string" id="projDesc" description="" title="Project Description">
+                    <value><%= project.description %></value>
+                </field>
+                <field type="string" id="version" description="" title="Version">
+                    <value><%= project.version %></value>
+                </field>
+                <field type="string" id="parentVersion" description="" title="Parent Version">
+                    <value><%= project.parent.version %></value>
+                </field>
+                <field type="string" id="appTitle" description="" title="Application Title">
+                    <value><%= project.description %></value>
+                </field>
+            </customization>
+            <enabled title="Enable Section">
+                <value>true</value>
+            </enabled>
+        </container>
+        <container id="odata" description="" title="oData Section">
+            <enabled title="Enable Section">
+                <value>true</value>
+            </enabled>
+            <odataConfiguration title="oData Configuration">
+                <collection collectionName="ProjectMilestoneDatesQuery" schemaName="tmp.kpi.vs3_cockpit.VS3_services.ProjectMilestoneDatesQuery" serviceName="ProjectMilestoneDatesQuery" id="collection_1" description="" title="Collection 1">
+                    <property labelRequired="false" required="true" id="property1" description="" title="Title">
+                        <value>MilestoneDescription</value>
+                    </property>
+                    <property labelRequired="false" required="false" id="property2" description="" title="Number">
+                        <value>DueToEndDays</value>
+                    </property>
+                    <property labelRequired="false" required="false" id="property3" description="" title="Number Unit">
+                        <value>CurrencyCode</value>
+                    </property>
+                    <property labelRequired="false" required="false" id="property4" description="" title="Attribute 1">
+                        <value>Project</value>
+                    </property>
+                    <property labelRequired="false" required="false" id="property5" description="" title="Attribute 2">
+                        <value>WBSElement</value>
+                    </property>
+                </collection>
+            </odataConfiguration>
+        </container>
+    </containers>
+    <services/>
+</templateModel>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<edmx:Edmx Version="1.0"
+	xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+	<edmx:DataServices
+		xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+		m:DataServiceVersion="2.0">
+		<Schema Namespace="tmp.kpi.vs3_cockpit.VS3_services.MilestoneOverdue"
+			xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+			xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+			xmlns="http://schemas.microsoft.com/ado/2007/05/edm">
+			<EntityType Name="ProjectMilestoneDatesQueryType">
+				<Key>
+					<PropertyRef Name="ID" />
+				</Key>
+				<Property Name="ID" Type="Edm.String" Nullable="false"
+					MaxLength="2147483647" />
+				<Property Name="SAPClient" Type="Edm.String" MaxLength="3" />
+				<Property Name="ProjectInternalID" Type="Edm.String"
+					MaxLength="8" />
+				<Property Name="Project" Type="Edm.String" MaxLength="24" />
+				<Property Name="ProjectDescription" Type="Edm.String"
+					MaxLength="40" />
+				<Property Name="ResponsiblePerson" Type="Edm.String"
+					MaxLength="8" />
+				<Property Name="ResponsiblePersonName" Type="Edm.String"
+					MaxLength="25" />
+				<Property Name="ApplicantCode" Type="Edm.String" MaxLength="8" />
+				<Property Name="ApplicantName" Type="Edm.String" MaxLength="25" />
+				<Property Name="CompanyCode" Type="Edm.String" MaxLength="4" />
+				<Property Name="BusinessArea" Type="Edm.String" MaxLength="4" />
+				<Property Name="ControllingArea" Type="Edm.String"
+					MaxLength="4" />
+				<Property Name="ProfitCenter" Type="Edm.String" MaxLength="10" />
+				<Property Name="Plant" Type="Edm.String" MaxLength="4" />
+				<Property Name="ControllingObjectClass" Type="Edm.String"
+					MaxLength="2" />
+				<Property Name="WBSElement" Type="Edm.String" MaxLength="24" />
+				<Property Name="WBSDescription" Type="Edm.String"
+					MaxLength="40" />
+				<Property Name="NetworkActivity" Type="Edm.String"
+					MaxLength="4" />
+				<Property Name="OperationText" Type="Edm.String" MaxLength="40" />
+				<Property Name="ProjectMilestone" Type="Edm.String"
+					MaxLength="12" />
+				<Property Name="MilestoneDescription" Type="Edm.String"
+					MaxLength="40" />
+				<Property Name="UsageCode" Type="Edm.String" MaxLength="5" />
+				<Property Name="UsageCodeName" Type="Edm.String" MaxLength="40" />
+				<Property Name="FixedBasicDate_E" Type="Edm.DateTime" />
+				<Property Name="ScheduledBasicDate_E" Type="Edm.DateTime" />
+				<Property Name="ActualEndDate_E" Type="Edm.DateTime" />
+				<Property Name="MlstnIsRelevantForTrendAnlys" Type="Edm.String"
+					MaxLength="1" />
+				<Property Name="MlstnIsRelevantForPrgrsAnlys" Type="Edm.String"
+					MaxLength="1" />
+				<Property Name="MlstnIsRelevantForDteInSlsDoc" Type="Edm.String"
+					MaxLength="1" />
+				<Property Name="CompletionPercentage" Type="Edm.String"
+					MaxLength="3" />
+				<Property Name="ProjCostToBeInvoicedInPercent" Type="Edm.Decimal"
+					Precision="5" Scale="2" />
+				<Property Name="OverdueToEndDays" Type="Edm.Int32" />
+				<Property Name="DueToEndDays" Type="Edm.Int32" />
+				<Property Name="OverDueDaysRange" Type="Edm.String"
+					MaxLength="10" />
+				<Property Name="DueDaysRange" Type="Edm.String" MaxLength="10" />
+				<Property Name="ScheduledForecastedDate_E" Type="Edm.DateTime" />
+				<Property Name="ForecastedFixedDate_E" Type="Edm.DateTime" />
+				<Property Name="NumberOfMilestones" Type="Edm.Int64" />
+				<Property Name="NumberOfOverdueProjMlst" Type="Edm.Int64" />
+				<Property Name="NumberOfProjMlstDue" Type="Edm.Int64" />
+			</EntityType>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

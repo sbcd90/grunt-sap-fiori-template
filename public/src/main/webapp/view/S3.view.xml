@@ -1,0 +1,17 @@
+<core:View xmlns:core="sap.ui.core"
+	xmlns="sap.m" xmlns:me="sap.me" xmlns:form="sap.ui.layout.form" xmlns:hier="sap.ca.ui" xmlns:layout="sap.ui.layout" controllerName="<%= project.artifactId %>.view.S3" >
+	<Page id="page" title="{i18n>DETAIL_TITLE}">
+		<content>
+            <ObjectHeader layoutData="Auto">
+				<attributes>
+					<ObjectAttribute/>
+                </attributes>
+			</ObjectHeader>
+			<IconTabBar>
+				
+			</IconTabBar>
+		</content>
+		<footer>
+		</footer>
+	</Page>
+</core:View>

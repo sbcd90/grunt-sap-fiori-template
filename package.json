@@ -1,0 +1,39 @@
+{
+  "name": "grunt-sap-fiori-template",
+  "description": "SAP Fiori Open UI5/Maven Template for creating SAP Fiori applications easily.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sbcd90/grunt-sap-fiori-template",
+  "author": {
+    "name": "Subhobrata Dey",
+    "email": "sbcd90@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sbcd90/grunt-sap-fiori-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sbcd90/grunt-sap-fiori-template/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/sbcd90/grunt-sap-fiori-template/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "devDependencies": {
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
