@@ -1,6 +1,8 @@
 grunt-sap-fiori-template
 ========================
 
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+
 - SAP Fiori Open UI5/Maven Template for creating SAP Fiori applications easily.
 
 Usage
