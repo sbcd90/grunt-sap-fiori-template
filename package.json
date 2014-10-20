@@ -1,7 +1,7 @@
 {
   "name": "grunt-sap-fiori-template",
   "description": "SAP Fiori Open UI5/Maven Template for creating SAP Fiori applications easily.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/sbcd90/grunt-sap-fiori-template",
   "author": {
     "name": "Subhobrata Dey",

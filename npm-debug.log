@@ -1,0 +1,116 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose publish [ '.' ]
+6 verbose cache add [ '.', null ]
+7 verbose cache add name=undefined spec="." args=[".",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: '.',
+8 verbose parsed url   path: '.',
+8 verbose parsed url   href: '.' }
+9 silly lockFile 3a52ce78- .
+10 verbose lock . C:\Users\i076326\AppData\Roaming\npm-cache\3a52ce78-.lock
+11 verbose tar pack [ 'C:\\Users\\i076326\\AppData\\Roaming\\npm-cache\\grunt-sap-fiori-template\\0.1.0\\package.tgz',
+11 verbose tar pack   '.' ]
+12 verbose tarball C:\Users\i076326\AppData\Roaming\npm-cache\grunt-sap-fiori-template\0.1.0\package.tgz
+13 verbose folder .
+14 info prepublish grunt-sap-fiori-template@0.1.0
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. C:\Users\i076326\AppData\Roaming\npm-cache\1f1177db-tar.lock
+17 silly lockFile 2e9c7f0a-fiori-template-0-1-0-package-tgz tar://C:\Users\i076326\AppData\Roaming\npm-cache\grunt-sap-fiori-template\0.1.0\package.tgz
+18 verbose lock tar://C:\Users\i076326\AppData\Roaming\npm-cache\grunt-sap-fiori-template\0.1.0\package.tgz C:\Users\i076326\AppData\Roaming\npm-cache\2e9c7f0a-fiori-template-0-1-0-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 2e9c7f0a-fiori-template-0-1-0-package-tgz tar://C:\Users\i076326\AppData\Roaming\npm-cache\grunt-sap-fiori-template\0.1.0\package.tgz
+22 silly lockFile 2e9c7f0a-fiori-template-0-1-0-package-tgz tar://C:\Users\i076326\AppData\Roaming\npm-cache\grunt-sap-fiori-template\0.1.0\package.tgz
+23 silly lockFile 896306f0-sap-fiori-template-0-1-0-package C:\Users\i076326\AppData\Roaming\npm-cache\grunt-sap-fiori-template\0.1.0\package
+24 verbose lock C:\Users\i076326\AppData\Roaming\npm-cache\grunt-sap-fiori-template\0.1.0\package C:\Users\i076326\AppData\Roaming\npm-cache\896306f0-sap-fiori-template-0-1-0-package.lock
+25 silly lockFile 896306f0-sap-fiori-template-0-1-0-package C:\Users\i076326\AppData\Roaming\npm-cache\grunt-sap-fiori-template\0.1.0\package
+26 silly lockFile 896306f0-sap-fiori-template-0-1-0-package C:\Users\i076326\AppData\Roaming\npm-cache\grunt-sap-fiori-template\0.1.0\package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'grunt-sap-fiori-template',
+29 silly publish   description: 'SAP Fiori Open UI5/Maven Template for creating SAP Fiori applications easily.',
+29 silly publish   version: '0.1.0',
+29 silly publish   homepage: 'https://github.com/sbcd90/grunt-sap-fiori-template',
+29 silly publish   author: { name: 'Subhobrata Dey', email: 'sbcd90@gmail.com' },
+29 silly publish   repository:
+29 silly publish    { type: 'git',
+29 silly publish      url: 'git://github.com/sbcd90/grunt-sap-fiori-template.git' },
+29 silly publish   bugs: { url: 'https://github.com/sbcd90/grunt-sap-fiori-template/issues' },
+29 silly publish   licenses:
+29 silly publish    [ { type: 'MIT',
+29 silly publish        url: 'https://github.com/sbcd90/grunt-sap-fiori-template/blob/master/LICENSE-MIT' } ],
+29 silly publish   engines: { node: '>= 0.8.0' },
+29 silly publish   scripts: { test: 'grunt' },
+29 silly publish   devDependencies:
+29 silly publish    { 'grunt-contrib-nodeunit': '^0.3.3',
+29 silly publish      'grunt-contrib-jshint': '^0.9.2',
+29 silly publish      'grunt-contrib-clean': '^0.5.0',
+29 silly publish      grunt: '~0.4.5' },
+29 silly publish   peerDependencies: { grunt: '~0.4.5' },
+29 silly publish   keywords: [ 'gruntplugin', 'sap', 'fiori', 'templates', 'openui5' ],
+29 silly publish   readme: 'grunt-sap-fiori-template\r\n========================\r\n\r\n[![NPM](https://nodei.co/npm/grunt-sap-fiori-template.png?compact=true)](https://nodei.co/npm/grunt-sap-fiori-template/)\r\n\r\n[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)\r\n\r\n- SAP Fiori Open UI5/Maven Template for creating SAP Fiori applications easily.\r\n\r\nUsage\r\n=====\r\n\r\n- This is a grunt plugin & can be used as any other grunt plugins.\r\n- Install this module from npm.\r\n- Check the file \'parameters.json\' for the list of configurable parameters which users can provide.\r\n- The below code snippet shows the initial configuration to execute the task which creates the SAP Fiori project structure.\r\n\r\n                                            sap_fiori_template: {\r\n                                                                 parameters : [ \'<%= pkg.destinationPath %>\',\r\n                                                                 \'<%= pkg.project_groupId %>\',\r\n                                                                 \'<%= pkg.project_artifactId %>\',\r\n                                                                 \'<%= pkg.project_version %>\',\r\n                                                                 \'<%= pkg.project_description %>\',\r\n                                                                 \'<%= pkg.project_parent_groupId %>\',\r\n                                                                 \'<%= pkg.project_parent_artifactId %>\',\r\n                                                                 \'<%= pkg.project_parent_version%>\'\r\n                                                                 ]\r\n                                            },\r\n                                            \r\n- Please check the [Gruntfile](https://raw.githubusercontent.com/sbcd90/grunt-sap-fiori-template/master/Gruntfile.js) for further details                                            \r\n',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: 'de0fe4b0cf1290281fbc43e54518c89611cc419e',
+29 silly publish   _id: 'grunt-sap-fiori-template@0.1.0',
+29 silly publish   _shasum: '5ce470c74d0777f68bc9e342110cb83aa1638117',
+29 silly publish   _from: '.' }
+30 verbose request where is /grunt-sap-fiori-template
+31 verbose request registry https://registry.npmjs.org/
+32 verbose request id 227946c2987b0ebe
+33 verbose url raw /grunt-sap-fiori-template
+34 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-sap-fiori-template' ]
+35 verbose url resolved https://registry.npmjs.org/grunt-sap-fiori-template
+36 verbose request where is https://registry.npmjs.org/grunt-sap-fiori-template
+37 info trying registry request attempt 1 at 11:17:07
+38 http PUT https://registry.npmjs.org/grunt-sap-fiori-template
+39 http 403 https://registry.npmjs.org/grunt-sap-fiori-template
+40 verbose headers { date: 'Mon, 20 Oct 2014 05:47:10 GMT',
+40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+40 verbose headers   'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=60',
+40 verbose headers   'content-length': '5263',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'x-served-by': 'cache-sn89-SIN',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1413784029.046247,VS0,VE989',
+40 verbose headers   'keep-alive': 'timeout=10, max=50',
+40 verbose headers   connection: 'Keep-Alive' }
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 0.1.0
+42 error old={"name":"grunt-sap-fiori-template","description":"SAP Fiori Open UI5/Maven Template for creating SAP Fiori applications easily.","version":"0.1.0","homepage":"https://github.com/sbcd90/grunt-sap-fiori-template","author":{"name":"Subhobrata Dey","email":"sbcd90@gmail.com"},"repository":{"type":"git","url":"git://github.com/sbcd90/grunt-sap-fiori-template.git"},"bugs":{"url":"https://github.com/sbcd90/grunt-sap-fiori-template/issues"},"licenses":[{"type":"MIT","url":"https://github.com/sbcd90/grunt-sap-fiori-template/blob/master/LICENSE-MIT"}],"engines":{"node":">= 0.8.0"},"scripts":{"test":"grunt"},"devDependencies":{"grunt-contrib-nodeunit":"^0.3.3","grunt-contrib-jshint":"^0.9.2","grunt-contrib-clean":"^0.5.0","grunt":"~0.4.5"},"peerDependencies":{"grunt":"~0.4.5"},"keywords":["gruntplugin"],"gitHead":"2da982a68a1b6d2239fdaa8d48043a64aad40e15","_id":"grunt-sap-fiori-template@0.1.0","_shasum":"b53f32981414a6caa5f76e1284f68893b97c3347","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"sbcd90","email":"sbcd90@gmail.com"},"maintainers":[{"name":"sbcd90","email":"sbcd90@gmail.com"}],"dist":{"shasum":"b53f32981414a6caa5f76e1284f68893b97c3347","tarball":"http://registry.npmjs.org/grunt-sap-fiori-template/-/grunt-sap-fiori-template-0.1.0.tgz"}}
+42 error new={"name":"grunt-sap-fiori-template","description":"SAP Fiori Open UI5/Maven Template for creating SAP Fiori applications easily.","version":"0.1.0","homepage":"https://github.com/sbcd90/grunt-sap-fiori-template","author":{"name":"Subhobrata Dey","email":"sbcd90@gmail.com"},"repository":{"type":"git","url":"git://github.com/sbcd90/grunt-sap-fiori-template.git"},"bugs":{"url":"https://github.com/sbcd90/grunt-sap-fiori-template/issues"},"licenses":[{"type":"MIT","url":"https://github.com/sbcd90/grunt-sap-fiori-template/blob/master/LICENSE-MIT"}],"engines":{"node":">= 0.8.0"},"scripts":{"test":"grunt"},"devDependencies":{"grunt-contrib-nodeunit":"^0.3.3","grunt-contrib-jshint":"^0.9.2","grunt-contrib-clean":"^0.5.0","grunt":"~0.4.5"},"peerDependencies":{"grunt":"~0.4.5"},"keywords":["gruntplugin","sap","fiori","templates","openui5"],"readme":"grunt-sap-fiori-template\u000d\u000a========================\u000d\u000a\u000d\u000a[![NPM](https://nodei.co/npm/grunt-sap-fiori-template.png?compact=true)](https://nodei.co/npm/grunt-sap-fiori-template/)\u000d\u000a\u000d\u000a[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)\u000d\u000a\u000d\u000a- SAP Fiori Open UI5/Maven Template for creating SAP Fiori applications easily.\u000d\u000a\u000d\u000aUsage\u000d\u000a=====\u000d\u000a\u000d\u000a- This is a grunt plugin & can be used as any other grunt plugins.\u000d\u000a- Install this module from npm.\u000d\u000a- Check the file 'parameters.json' for the list of configurable parameters which users can provide.\u000d\u000a- The below code snippet shows the initial configuration to execute the task which creates the SAP Fiori project structure.\u000d\u000a\u000d\u000a                                            sap_fiori_template: {\u000d\u000a                                                                 parameters : [ '<%= pkg.destinationPath %>',\u000d\u000a                                                                 '<%= pkg.project_groupId %>',\u000d\u000a                                                                 '<%= pkg.project_artifactId %>',\u000d\u000a                                                                 '<%= pkg.project_version %>',\u000d\u000a                                                                 '<%= pkg.project_description %>',\u000d\u000a                                                                 '<%= pkg.project_parent_groupId %>',\u000d\u000a                                                                 '<%= pkg.project_parent_artifactId %>',\u000d\u000a                                                                 '<%= pkg.project_parent_version%>'\u000d\u000a                                                                 ]\u000d\u000a                                            },\u000d\u000a                                            \u000d\u000a- Please check the [Gruntfile](https://raw.githubusercontent.com/sbcd90/grunt-sap-fiori-template/master/Gruntfile.js) for further details                                            \u000d\u000a","readmeFilename":"README.md","gitHead":"de0fe4b0cf1290281fbc43e54518c89611cc419e","_id":"grunt-sap-fiori-template@0.1.0","_shasum":"5ce470c74d0777f68bc9e342110cb83aa1638117","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"sbcd90","email":"sbcd90@gmail.com"},"maintainers":[{"name":"sbcd90","email":"sbcd90@gmail.com"}],"dist":{"shasum":"5ce470c74d0777f68bc9e342110cb83aa1638117","tarball":"http://registry.npmjs.org/grunt-sap-fiori-template/-/grunt-sap-fiori-template-0.1.0.tgz"}}: grunt-sap-fiori-template
+42 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+42 error     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+42 error     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+42 error     at Request.emit (events.js:98:17)
+42 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+42 error     at Request.emit (events.js:117:20)
+42 error     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+42 error     at IncomingMessage.emit (events.js:117:20)
+42 error     at _stream_readable.js:943:16
+42 error     at process._tickCallback (node.js:419:13)
+43 error If you need help, you may report this *entire* log,
+43 error including the npm and node versions, at:
+43 error     <http://github.com/npm/npm/issues>
+44 error System Windows_NT 6.1.7601
+45 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+46 error cwd C:\Users\i076326\Documents\programs\grunt-sap-fiori-template
+47 error node -v v0.10.32
+48 error npm -v 1.4.28
+49 verbose exit [ 1, true ]
